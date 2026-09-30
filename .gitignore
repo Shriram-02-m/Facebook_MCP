@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+.mcp_token_store.json
+*.log
+.DS_Store
