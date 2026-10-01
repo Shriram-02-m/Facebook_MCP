@@ -1,5 +1,6 @@
+const fs = require('fs');
 const axios = require('axios');
-const store = require('./.mcp_token_store.json');
+const store = JSON.parse(fs.readFileSync(require('path').join(__dirname, '..', '.mcp_token_store.json'), 'utf-8'));
 
 const pageToken = store.page_access_tokens['1326722813860832'];
 const pageId = '1326722813860832';
